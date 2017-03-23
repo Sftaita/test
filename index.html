@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		 <meta charset="ISO-8859-1">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <title>MyKnee</title>
+	
+		 <link rel="stylesheet" type="text/CSS" href="Style.css" />
+         		 <script src="script.js"></script>
+	</head>
+	
+
+	
+		<div class="bande"></div>
+		<header>
+			
+		
+		<h1 class="entete"; style="position: absolute; top:29px; left:18%;"><image src="genou.png" height="105"/>
+		
+		
+		</header>
+	
+	<body class="main">
+	
+	
+		<!-- Question-->
+			<div>
+				<div id="question"; class="text"; style="position: absolute; top:30%; left:5%; right: 5%;">1. I underwent conservative treatment and I am no longer satisfied with the outcome.</div>
+			</div>
+		
+		
+		
+		<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Bouttons !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+			<!-- Question 1-->
+			<button id="btn-yes1" class='button_yes'  style="position: absolute; bottom:20%; left: 30%" value="submit" onclick="clickEvent();">YES</button>
+			<button id="btn-no1"  class='button_no'   style="position: absolute; bottom:7%; left: 30%">NO</button>
+	
+			<!-- Question 2 -->
+			<button id="btn-yes2" class='button_yes'; style="display:none ; position: absolute; bottom:20%; left:30%;">YES</button>
+			<button id="btn-no2"  class='button_no';  style="display:none ; position: absolute; bottom:7%; left: 30%;"> NO </button>
+			<button id="backto1"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+			
+			<!-- Question 3 -->
+			<button id="btn-yes3" class='button_yes'; style="display:none ; position: absolute; bottom:20%; left:30%;">YES</button>
+			<button id="btn-no3"  class='button_no';  style="display:none ; position: absolute; bottom:7%; left: 30%;"> NO </button>
+			<button id="backto2"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+			
+			<!-- Question 4 -->
+			<button id="btn-yes4" class='button_yes'; style="display:none ; position: absolute; bottom:20%; left:30%;">YES</button>
+			<button id="btn-no4"  class='button_no';  style="display:none ; position: absolute; bottom:7%; left: 30%;"> NO </button>
+			<button id="backto3"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+			
+			<!-- Question 5 -->
+			<button id="btn-yes5" class='button_yes'; style="display:none ; position: absolute; bottom:20%; left:30%;">YES</button>
+			<button id="btn-no5"  class='button_no';  style="display:none ; position: absolute; bottom:7%; left: 30%;"> NO </button>
+			<button id="backto4"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+			
+			<!-- Question 6 -->
+			<button id="btn-yes6" class='button_yes'; style="display:none ; position: absolute; bottom:20%; left:30%;">YES</button>
+			<button id="btn-no6"  class='button_no';  style="display:none ; position: absolute; bottom:7%; left: 30%;"> NO </button>
+			<button id="backto5"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+			
+			<!-- Question 7 -->
+			<button id="btn-yes7" class='button_yes'; style="display:none ; position: absolute; bottom:20%; left:30%;">YES</button>
+			<button id="btn-no7"  class='button_no';  style="display:none ; position: absolute; bottom:7%; left: 30%;"> NO </button>
+			<button id="backto6"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+			
+			<!-- Question 8 -->
+			<button id="btn-yes8" class='button_yes'; style="display:none ; position: absolute; bottom:20%; left:30%;">YES</button>
+			<button id="btn-no8"  class='button_no';  style="display:none ; position: absolute; bottom:7%; left: 30%;"> NO </button>
+			<button id="backto7"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+			
+			<!-- Question 9 -->
+			<button id="btn-yes9" class='button_yes'; style="display:none ; position: absolute; bottom:20%; left:30%;">YES</button>
+			<button id="btn-no9"  class='button_no';  style="display:none ; position: absolute; bottom:7%; left: 30%;"> NO </button>
+			<button id="backto8"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+			
+			<!-- Question 10 -->
+			<button id="btn-yes10" class='button_yes'; style="display:none ; position: absolute; bottom:20%; left:30%;">YES</button>
+			<button id="btn-no10"  class='button_no';  style="display:none ; position: absolute; bottom:7%; left: 30%;"> NO </button>
+			<button id="backto9"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+			
+			<!-- Question 10bis -->
+			<div id="qcm10b" style="display:none; position: absolute; top:280px; left:8%;">
+					<label class="checkbox"><input id="10a" type="checkbox" /><span class="rounded"></span> Rheumatoid arthritis<label/><p>
+					<label class="checkbox"><input id="10b" type="checkbox" /><span class="rounded"></span> Lupus<label/>
+					<label class="checkbox"><input id="10c" type="checkbox" /><span class="rounded"></span> Hemophilia<label/><p>
+					<label class="checkbox"><input id="10d" type="checkbox" /><span class="rounded"></span> Gout<label/>
+					<label class="checkbox"><input id="10e" type="checkbox" /><span class="rounded"></span> Psoriasis<label/><p>
+					<label class="checkbox"><input id="10f" type="checkbox" /><span class="rounded"></span> Chondrocalcinosis<label/><p>
+					<p></p>
+			</div>
+			<div id="ok10" style="display:none; position: absolute; bottom:7%; left: 30%;">
+					<button id="ok10"; class='button_ok';>OK</button>
+			</div>
+			
+			<button id="backto10bis"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+			
+			<!-- Question 11 -->
+			<div id="qcm11" style="display:none; position: absolute; top:250px; left:12%;">
+					<label class="checkbox"><input id="11a" type="checkbox" /><span class="rounded"></span> Complete extension<label/><p>
+					<label class="checkbox"><input id="11b" type="checkbox" /><span class="rounded"></span> Flexion contracture <10°<label/><p>
+					<label class="checkbox"><input id="11c" type="checkbox" /><span class="rounded"></span> Flexion contracture >10°<label/><p>
+					<label class="checkbox"><input id="11d" type="checkbox" /><span class="rounded"></span> Flexion <90°<label/><p><p></p>
+			</div>
+			<div id="ok11" style="display:none; position: absolute; bottom:7%; left: 30%;">
+			<button id="ok11"; class='button_ok';>OK</button>
+			</div>
+			<button id="backto10"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+		
+			<!-- Question 12 -->
+			<button id="btn-yes12" class='button_yes'; style="display:none ; position: absolute; bottom:20%; left:30%;">YES</button>
+			<button id="btn-no12"  class='button_no';  style="display:none ; position: absolute; bottom:7%; left: 30%;"> NO </button>
+			<button id="backto11"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+			
+			<!-- Question 13 -->
+			<button id="btn-yes13" class='button_yes'; style="display:none ; position: absolute; bottom:20%; left:30%;">YES</button>
+			<button id="btn-no13"  class='button_no';  style="display:none ; position: absolute; bottom:7%; left: 30%;"> NO </button>
+			<button id="backto12"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+			
+			<!-- Question 14 -->
+			<button id="btn-yes14" class='button_yes'; style="display:none ; position: absolute; bottom:20%; left:30%;">YES</button>
+			<button id="btn-no14"  class='button_no';  style="display:none ; position: absolute; bottom:7%; left: 30%;"> NO </button>
+			<button id="backto13"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+			
+			<!-- Question 15 -->
+			<button id="btn-yes15" class='button_yes'; style="display:none ; position: absolute; bottom:20%; left:30%;">YES</button>
+			<button id="btn-no15"  class='button_no';  style="display:none ; position: absolute; bottom:7%; left: 30%;"> NO </button>
+			<button id="backto14"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+		
+		
+			<!-- Question 16 -->
+			<button id="btn-yes16" class='button_yes'; style="display:none ; position: absolute; bottom:20%; left:30%;">YES</button>
+			<button id="btn-no16"  class='button_no';  style="display:none ; position: absolute; bottom:7%; left: 30%;"> NO </button>
+			<button id="backto15"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+		
+			<!-- Question 17 -->
+			<button id="backto16"  class='button_back'; style=" display:none; position: absolute; left:5%; top:1%;">Back</button>
+		
+		<!-- Variable !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+			<!-- Compte total = var_total -->
+				
+				<script language="javascript">
+								var var_total=0;
+								function modifier_total(increment) {
+								var_total+=increment;
+								document.getElementById('total').value = var_total;
+								}
+				</script>
+								
+				<div style="text-align:center; display:none;  position: absolute; bottom:35%; left:30%; "><input type="text" id="total" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('total').value=var_total;
+				</script>
+			
+			<!-- Variable question 3 = var_q3 -->
+				
+				<script language="javascript">
+								var var_q3=0;
+								function modifier_q3(increment) {
+								var_q3+=increment;
+								document.getElementById('q3').value = var_q3;
+								}
+				</script>
+								
+				<div style="text-align:center; display:none;  position: absolute; bottom:45%; left:30%; "><input type="text" id="q3" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('q3').value=var_q3;
+				</script>
+				
+			
+			<!-- Variable question 4 = var_q4 -->
+				
+				<script language="javascript">
+								var var_q4=0;
+								function modifier_q4(increment) {
+								var_q4+=increment;
+								document.getElementById('q4').value = var_q4;
+								}
+				</script>
+								
+				<div style="text-align:center; display:none; position: absolute; bottom:45%; left:30%; "><input type="text" id="q4" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('q4').value=var_q4;
+				</script>
+				
+			
+			<!-- Variable question 5 = var_q5 -->
+				
+				<script language="javascript">
+								var var_q5=0;
+								function modifier_q5(increment) {
+								var_q5+=increment;
+								document.getElementById('q5').value = var_q5;
+								}
+				</script>
+								
+				<div style="text-align:center; display:none; position: absolute; bottom:45%; left:30%; "><input type="text" id="q5" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('q5').value=var_q5;
+				</script>
+			
+			<!-- Variable question 6 = var_q6 -->
+				
+				<script language="javascript">
+								var var_q6=0;
+								function modifier_q6(increment) {
+								var_q6+=increment;
+								document.getElementById('q6').value = var_q6;
+								}
+				</script>
+								
+				<div style="text-align:center; display:none;  position: absolute; bottom:45%; left:30%; "><input type="text" id="q6" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('q6').value=var_q6;
+				</script>
+
+			<!-- Variable question 7 = var_q7 -->
+				
+				<script language="javascript">
+								var var_q7=0;
+								function modifier_q7(increment) {
+								var_q7+=increment;
+								document.getElementById('q7').value = var_q7;
+								}
+				</script>
+								
+				<div style="text-align:center; display:none; position: absolute; bottom:45%; left:30%; "><input type="text" id="q7" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('q7').value=var_q7;
+				</script>
+				
+			
+			<!-- Variable question 8 = var_q8 -->
+				
+				<script language="javascript">
+								var var_q8=0;
+								function modifier_q8(increment) {
+								var_q8+=increment;
+								document.getElementById('q8').value = var_q8;
+								}
+				</script>
+								
+				<div style="text-align:center; display:none; position: absolute; bottom:45%; left:30%; "><input type="text" id="q8" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('q8').value=var_q8;
+				</script>
+				
+			<!-- Variable question 9 = var_q9 -->
+				
+				<script language="javascript">
+								var var_q9=0;
+								function modifier_q9(increment) {
+								var_q9+=increment;
+								document.getElementById('q9').value = var_q9;
+								}
+				</script>
+								
+				<div style="text-align:center; display:none;  position: absolute; bottom:45%; left:30%; "><input type="text" id="q9" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('q9').value=var_q9;
+				</script>
+				
+			<!-- Variable question 10 = var_q10 -->
+				
+				<script language="javascript">
+								var var_q10=0;
+								function modifier_q10(increment) {
+								var_q10+=increment;
+								document.getElementById('q10').value = var_q10;
+								}
+				</script>
+								
+				<div style="text-align:center; display:none;  position: absolute; bottom:45%; left:30%; "><input type="text" id="q10" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('q10').value=var_q10;
+				</script>
+				
+			<!-- Variable question 10bis = var_q10b -->
+				
+				<script language="javascript">
+								var var_q10b=0;
+								function modifier_q10b(increment) {
+								var_q10b=increment;
+								document.getElementById('q10b').value = var_q10b;
+								}
+				</script>
+								
+				<div style="text-align:center;display:none; position: absolute; bottom:55%; left:30%; "><input type="text" id="q10b" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('q10b').value=var_q10b;
+				</script>
+	
+			<!-- Variable question 11 = var_q11 -->
+				
+				<script language="javascript">
+								var var_q11=0;
+								function modifier_q11(increment) {
+								var_q11+=increment;
+								document.getElementById('q11').value = var_q11;
+								}
+				</script>
+								
+				<div style="text-align:center; display:none; position: absolute; bottom:45%; left:30%; "><input type="text" id="q11" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('q11').value=var_q11;
+				</script>
+		
+			<!-- Variable question 12 = var_q12 -->
+				
+				<script language="javascript">
+								var var_q12=0;
+								function modifier_q12(increment) {
+								var_q12+=increment;
+								document.getElementById('q12').value = var_q12;
+								}
+				</script>
+								
+				<div style="text-align:center; display:none; position: absolute; bottom:45%; left:30%; "><input type="text" id="q12" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('q12').value=var_q12;
+				</script>
+				
+			<!-- Variable question 13 = var_q13 -->
+				
+				<script language="javascript">
+								var var_q13=0;
+								function modifier_q13(increment) {
+								var_q13+=increment;
+								document.getElementById('q13').value = var_q13;
+								}
+				</script>
+								
+				<div style="text-align:center; display:none; position: absolute; bottom:45%; left:30%; "><input type="text" id="q13" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('q13').value=var_q13;
+				</script>
+		
+			<!-- Variable question 14 = var_q14 -->
+				
+				<script language="javascript">
+								var var_q14=0;
+								function modifier_q14(increment) {
+								var_q14+=increment;
+								document.getElementById('q14').value = var_q14;
+								}
+				</script>
+								
+				<div style="text-align:center; display:none; position: absolute; bottom:45%; left:30%; "><input type="text" id="q14" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('q14').value=var_q14;
+				</script>
+				
+			<!-- Variable question 15 = var_q15 -->
+				
+				<script language="javascript">
+								var var_q15=0;
+								function modifier_q15(increment) {
+								var_q15+=increment;
+								document.getElementById('q15').value = var_q15;
+								}
+				</script>
+								
+				<div style="text-align:center; display:none; position: absolute; bottom:45%; left:30%; "><input type="text" id="q15" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('q15').value=var_q15;
+				</script>
+				
+			<!-- Variable question 16 = var_q16 -->
+				
+				<script language="javascript">
+								var var_q16=0;
+								function modifier_q16(increment) {
+								var_q16+=increment;
+								document.getElementById('q16').value = var_q16;
+								}
+				</script>
+								
+				<div style="text-align:center; display:none; position: absolute; bottom:45%; left:30%; "><input type="text" id="q16" value="0" size="3" readonly="true" style="background-color:#FFFFFF; border:#FFFFFF none 0px; text-align:center; font-size:30px"> </div>
+								
+						
+				<script language="javascript">
+								document.getElementById('q16').value=var_q16;
+				</script>
+		<!--Code Java*******************************************************************************************************************************-->
+		
+		<script>
+			<!--Question 1-->
+				<!--Réponse YES -->
+				
+					document.getElementById("btn-yes1").onclick = function(){
+					document.getElementById("question").innerHTML = "2. I underwent radiology of my knee and a radiograph shows bone on bone osteoarthritis.";
+			
+					document.getElementById("btn-yes1").style.display= 'none';
+					document.getElementById("btn-no1").style.display= 'none';
+					
+					document.getElementById("btn-yes2").style.display= 'block';
+					document.getElementById("btn-no2").style.display= 'block';
+					document.getElementById("backto1").style.display= 'block';
+					}
+					
+				<!--Réponse NO -->
+					
+					document.getElementById("btn-no1").onclick = function(){
+					document.getElementById("question").innerHTML = "2. We recomand treatments such as oral glucosamine, weight loss, moderate physical activity like cycling, injections with hyaluronic acid or steroids.";
+			
+					document.getElementById("btn-yes1").style.display= 'none';
+					document.getElementById("btn-no1").style.display= 'none';
+					
+					document.getElementById("backto1").style.display= 'block';
+					}
+					
+						
+			<!--Question 2-->
+				<!--Réponse YES -->
+				
+					document.getElementById("btn-yes2").onclick = function(){
+					document.getElementById("question").innerHTML = "3. I had meniscus surgery previously during my lifetime on only one of my menisci?";
+			
+					document.getElementById("btn-yes2").style.display= 'none';
+					document.getElementById("btn-no2").style.display= 'none';
+					document.getElementById("backto1").style.display= 'none';
+					
+					document.getElementById("btn-yes3").style.display= 'block';
+					document.getElementById("btn-no3").style.display= 'block';
+					document.getElementById("backto2").style.display= 'block';
+					}
+					
+				<!--Réponse NO -->
+					
+					document.getElementById("btn-no2").onclick = function(){
+					document.getElementById("question").innerHTML = "3. We recommand to undergo radiographs of the knee with an AP and lateral view as well as a Rosenberg and Merchant view.";
+			
+					document.getElementById("btn-yes2").style.display= 'none';
+					document.getElementById("btn-no2").style.display= 'none';
+					
+					document.getElementById("backto2").style.display= 'block';
+					}
+				
+				<!-- Retour question 1-->
+					
+					document.getElementById("backto1").onclick = function(){
+					document.getElementById("question").innerHTML = "1. I underwent conservative treatment and I am no longer satisfied with the outcome.";
+			
+					document.getElementById("btn-yes1").style.display= 'block';
+					document.getElementById("btn-no1").style.display= 'block';
+					
+					
+					document.getElementById("btn-yes2").style.display= 'none';
+					document.getElementById("btn-no2").style.display= 'none';
+					document.getElementById("backto1").style.display= 'none';
+					}
+			
+			<!--Question 3-->
+				<!--Réponse YES -->
+				
+					document.getElementById("btn-yes3").onclick = function(){
+					document.getElementById("question").innerHTML = "4. I can point out one single point about the knee, which is painful?";
+			
+					document.getElementById("btn-yes3").style.display= 'none';
+					document.getElementById("btn-no3").style.display= 'none';
+					document.getElementById("backto2").style.display= 'none';
+					
+					document.getElementById("btn-yes4").style.display= 'block';
+					document.getElementById("btn-no4").style.display= 'block';
+					document.getElementById("backto3").style.display= 'block';
+					
+					modifier_total(+1);
+					modifier_q3(+1);
+					}
+					
+				<!--Réponse NO -->
+					
+					document.getElementById("btn-no3").onclick = function(){
+					document.getElementById("question").innerHTML = "4. I can point out one single point about the knee, which is painful?";
+					
+					document.getElementById("btn-yes3").style.display= 'none';
+					document.getElementById("btn-no3").style.display= 'none';
+					document.getElementById("backto2").style.display= 'none';
+					
+					document.getElementById("btn-yes4").style.display= 'block';
+					document.getElementById("btn-no4").style.display= 'block';
+					document.getElementById("backto3").style.display= 'block';
+					
+					modifier_total(-1);
+					modifier_q3(-1);
+					}
+				
+				<!-- Retour question 2-->
+					
+					document.getElementById("backto2").onclick = function(){
+					document.getElementById("question").innerHTML = "2. I underwent radiology of my knee and a radiograph shows bone on bone osteoarthritis.";
+			
+					document.getElementById("btn-yes2").style.display= 'block';
+					document.getElementById("btn-no2").style.display= 'block';
+					document.getElementById("backto1").style.display= 'block';
+					
+					document.getElementById("btn-yes3").style.display= 'none';
+					document.getElementById("btn-no3").style.display= 'none';
+					document.getElementById("backto2").style.display= 'none';
+					}
+					
+			<!--Question 4-->
+				<!--Réponse YES -->
+				
+					document.getElementById("btn-yes4").onclick = function(){
+					document.getElementById("question").innerHTML = "5. I have bowed legs or knocked knees?";
+			
+					document.getElementById("btn-yes4").style.display= 'none';
+					document.getElementById("btn-no4").style.display= 'none';
+					document.getElementById("backto3").style.display= 'none';
+					
+					document.getElementById("btn-yes5").style.display= 'block';
+					document.getElementById("btn-no5").style.display= 'block';
+					document.getElementById("backto4").style.display= 'block';
+					
+					modifier_total(+1);
+					modifier_q4(+1);
+					}
+					
+				<!--Réponse NO -->
+					
+					document.getElementById("btn-no4").onclick = function(){
+					document.getElementById("question").innerHTML = "5. I have bowed legs or knocked knees?";
+			
+					document.getElementById("btn-yes4").style.display= 'none';
+					document.getElementById("btn-no4").style.display= 'none';
+					document.getElementById("backto3").style.display= 'none';
+					
+					document.getElementById("btn-yes5").style.display= 'block';
+					document.getElementById("btn-no5").style.display= 'block';
+					document.getElementById("backto4").style.display= 'block';
+					
+					modifier_total(-1);
+					modifier_q4(-1);
+					}
+				
+				<!-- Retour question 3-->
+					
+					document.getElementById("backto3").onclick = function(){
+					document.getElementById("question").innerHTML = "3. I had meniscus surgery previously during my lifetime on only one of my menisci?";
+			
+					document.getElementById("btn-yes3").style.display= 'block';
+					document.getElementById("btn-no3").style.display= 'block';
+					document.getElementById("backto2").style.display= 'block';
+					
+					document.getElementById("btn-yes4").style.display= 'none';
+					document.getElementById("btn-no4").style.display= 'none';
+					document.getElementById("backto3").style.display= 'none';
+					
+					if(var_q3 == 1){
+					modifier_total(-1); modifier_q3(-1)
+					}
+					
+					if(var_q3 == -1){
+					modifier_total(+1); modifier_q3(+1)
+					}
+					}
+				
+			<!--Question 5-->
+				<!--Réponse YES -->
+				
+					document.getElementById("btn-yes5").onclick = function(){
+					document.getElementById("question").innerHTML = "6. I have no pain in going upstairs?";
+			
+					document.getElementById("btn-yes5").style.display= 'none';
+					document.getElementById("btn-no5").style.display= 'none';
+					document.getElementById("backto4").style.display= 'none';
+					
+					document.getElementById("btn-yes6").style.display= 'block';
+					document.getElementById("btn-no6").style.display= 'block';
+					document.getElementById("backto5").style.display= 'block';
+					
+					modifier_total(+1); 
+					modifier_q5(+1);
+					}
+					
+				<!--Réponse NO -->
+					
+					document.getElementById("btn-no5").onclick = function(){
+					document.getElementById("question").innerHTML = "6. I have no pain in going upstairs?";
+			
+					document.getElementById("btn-yes5").style.display= 'none';
+					document.getElementById("btn-no5").style.display= 'none';
+					document.getElementById("backto4").style.display= 'none';
+					
+					document.getElementById("btn-yes6").style.display= 'block';
+					document.getElementById("btn-no6").style.display= 'block';
+					document.getElementById("backto5").style.display= 'block';
+					
+					modifier_total(-1); 
+					modifier_q5(-1);
+					}
+				
+				<!-- Retour question 4-->
+					
+					document.getElementById("backto4").onclick = function(){
+					document.getElementById("question").innerHTML = "4. I can point out one single point about the knee, which is painful?";
+			
+					document.getElementById("btn-yes4").style.display= 'block';
+					document.getElementById("btn-no4").style.display= 'block';
+					document.getElementById("backto3").style.display= 'block';
+					
+					document.getElementById("btn-yes5").style.display= 'none';
+					document.getElementById("btn-no5").style.display= 'none';
+					document.getElementById("backto4").style.display= 'none';
+					
+					if(var_q4 == 1){
+					modifier_total(-1); modifier_q4(-1)
+					}
+					
+					if(var_q4 == -1){
+					modifier_total(+1); modifier_q4(+1)
+					}
+					}
+			
+			<!--Question 6-->
+				<!--Réponse YES -->
+				
+					document.getElementById("btn-yes6").onclick = function(){
+					document.getElementById("question").innerHTML = "7. I don’t use morphine to control my knee pain?";
+			
+					document.getElementById("btn-yes6").style.display= 'none';
+					document.getElementById("btn-no6").style.display= 'none';
+					document.getElementById("backto5").style.display= 'none';
+					
+					document.getElementById("btn-yes7").style.display= 'block';
+					document.getElementById("btn-no7").style.display= 'block';
+					document.getElementById("backto6").style.display= 'block';
+					
+					modifier_total(+1);
+					modifier_q6(+1);
+					}
+					
+				<!--Réponse NO -->
+					
+					document.getElementById("btn-no6").onclick = function(){
+					document.getElementById("question").innerHTML = "7. I don't use morphine to control my knee pain?";
+			
+					document.getElementById("btn-yes6").style.display= 'none';
+					document.getElementById("btn-no6").style.display= 'none';
+					document.getElementById("backto5").style.display= 'none';
+					
+					document.getElementById("btn-yes7").style.display= 'block';
+					document.getElementById("btn-no7").style.display= 'block';
+					document.getElementById("backto6").style.display= 'block';
+					
+					modifier_total(-1);
+					modifier_q6(-1);
+					}
+				
+				<!-- Retour question 5-->
+					
+					document.getElementById("backto5").onclick = function(){
+					document.getElementById("question").innerHTML = "5. I have bowed legs or knocked knees?";
+			
+					document.getElementById("btn-yes5").style.display= 'block';
+					document.getElementById("btn-no5").style.display= 'block';
+					document.getElementById("backto4").style.display= 'block';
+					
+					document.getElementById("btn-yes6").style.display= 'none';
+					document.getElementById("btn-no6").style.display= 'none';
+					document.getElementById("backto5").style.display= 'none';
+					
+					if(var_q5 == 1){
+					modifier_total(-1); modifier_q5(-1)
+					}
+					
+					if(var_q5 == -1){
+					modifier_total(+1); modifier_q5(+1)
+					}
+					}
+			
+			<!--Question 7-->
+				<!--Réponse YES -->
+				
+					document.getElementById("btn-yes7").onclick = function(){
+					document.getElementById("question").innerHTML = "8. I know that I have an intact anterior cruciate ligament in my knee?";
+			
+					document.getElementById("btn-yes7").style.display= 'none';
+					document.getElementById("btn-no7").style.display= 'none';
+					document.getElementById("backto6").style.display= 'none';
+					
+					document.getElementById("btn-yes8").style.display= 'block';
+					document.getElementById("btn-no8").style.display= 'block';
+					document.getElementById("backto7").style.display= 'block';
+					
+					modifier_total(+1);
+					modifier_q7(+1);
+					}
+					
+				<!--Réponse NO -->
+					
+					document.getElementById("btn-no7").onclick = function(){
+					document.getElementById("question").innerHTML = "8. I know that I have an intact anterior cruciate ligament in my knee?";
+			
+					document.getElementById("btn-yes7").style.display= 'none';
+					document.getElementById("btn-no7").style.display= 'none';
+					document.getElementById("backto6").style.display= 'none';
+					
+					document.getElementById("btn-yes8").style.display= 'block';
+					document.getElementById("btn-no8").style.display= 'block';
+					document.getElementById("backto7").style.display= 'block';
+					
+					modifier_total(-1);
+					modifier_q7(-1);
+					}
+				
+				<!-- Retour question 6-->
+					
+					document.getElementById("backto6").onclick = function(){
+					document.getElementById("question").innerHTML = "6. I have no pain in going upstairs?";
+			
+					document.getElementById("btn-yes6").style.display= 'block';
+					document.getElementById("btn-no6").style.display= 'block';
+					document.getElementById("backto5").style.display= 'block';
+					
+					document.getElementById("btn-yes7").style.display= 'none';
+					document.getElementById("btn-no7").style.display= 'none';
+					document.getElementById("backto6").style.display= 'none';
+					
+					if(var_q6 == 1){
+					modifier_total(-1); modifier_q6(-1)
+					}
+					
+					if(var_q6 == -1){
+					modifier_total(+1); modifier_q6(+1)
+					}
+					}
+			
+			<!--Question 8-->
+				<!--Réponse YES -->
+				
+					document.getElementById("btn-yes8").onclick = function(){
+					document.getElementById("question").innerHTML = "9. I have important osteoporosis of my bones?";
+			
+					document.getElementById("btn-yes8").style.display= 'none';
+					document.getElementById("btn-no8").style.display= 'none';
+					document.getElementById("backto7").style.display= 'none';
+					
+					document.getElementById("btn-yes9").style.display= 'block';
+					document.getElementById("btn-no9").style.display= 'block';
+					document.getElementById("backto8").style.display= 'block';
+					
+					modifier_total(+1);
+					modifier_q8(+1);
+					}
+					
+				<!--Réponse NO -->
+					
+					document.getElementById("btn-no8").onclick = function(){
+					document.getElementById("question").innerHTML = "9. I have important osteoporosis of my bones?";
+			
+					document.getElementById("btn-yes9").style.display= 'block';
+					document.getElementById("btn-no9").style.display= 'block';
+					document.getElementById("backto8").style.display= 'block';
+					
+					document.getElementById("btn-yes8").style.display= 'none';
+					document.getElementById("btn-no8").style.display= 'none';
+					document.getElementById("backto7").style.display= 'none';
+					
+					
+					}
+				
+				<!-- Retour question 7-->
+					
+					document.getElementById("backto7").onclick = function(){
+					document.getElementById("question").innerHTML = "7. I don’t use morphine to control my knee pain?";
+			
+					document.getElementById("btn-yes7").style.display= 'block';
+					document.getElementById("btn-no7").style.display= 'block';
+					document.getElementById("backto6").style.display= 'block';
+					
+					document.getElementById("btn-yes8").style.display= 'none';
+					document.getElementById("btn-no8").style.display= 'none';
+					document.getElementById("backto7").style.display= 'none';
+					
+					if(var_q7 == 1){
+					modifier_total(-1); modifier_q7(-1)
+					}
+					
+					if(var_q7 == -1){
+					modifier_total(+1); modifier_q7(+1)
+					}
+					}
+			
+			<!--Question 9-->
+				<!--Réponse YES -->
+				
+					document.getElementById("btn-yes9").onclick = function(){
+					document.getElementById("question").innerHTML = "You are a potential candidate for Total Knee Arthroplasty";
+			
+					document.getElementById("btn-yes9").style.display= 'none';
+					document.getElementById("btn-no9").style.display= 'none';
+					document.getElementById("backto8").style.display= 'none';
+					
+					
+					document.getElementById("backto9").style.display= 'block';
+					
+					modifier_total(-1); modifier_q9(-1);
+					}
+					
+				<!--Réponse NO -->
+					
+					document.getElementById("btn-no9").onclick = function(){
+					document.getElementById("question").innerHTML = "10. I have an inflammatory diseases to the best of my knowledge?";
+			
+					document.getElementById("btn-yes9").style.display= 'none';
+					document.getElementById("btn-no9").style.display= 'none';
+					document.getElementById("backto8").style.display= 'none';
+					
+					document.getElementById("btn-yes10").style.display= 'block';
+					document.getElementById("btn-no10").style.display= 'block';
+					document.getElementById("backto9").style.display= 'block';
+					
+					modifier_total(+1);
+					modifier_q9(+1);
+					}
+				
+				<!-- Retour question 8-->
+					
+					document.getElementById("backto8").onclick = function(){
+					document.getElementById("question").innerHTML = "8. I know that I have an intact anterior cruciate ligament in my knee?";
+			
+					document.getElementById("btn-yes8").style.display= 'block';
+					document.getElementById("btn-no8").style.display= 'block';
+					document.getElementById("backto7").style.display= 'block';
+					
+					document.getElementById("btn-yes9").style.display= 'none';
+					document.getElementById("btn-no9").style.display= 'none';
+					document.getElementById("backto8").style.display= 'none';
+					
+					if(var_q8 == 1){
+					modifier_total(-1); modifier_q8(-1)
+					}
+					}
+					
+			<!--Question 10-->
+				<!--Réponse NO -->
+				
+					document.getElementById("btn-no10").onclick = function(){
+					document.getElementById("question").innerHTML = "11. Range of movement?";
+			
+					document.getElementById("qcm11").style.display= 'block';
+					document.getElementById("ok11").style.display= 'block';
+					document.getElementById("backto10").style.display= 'block';
+					
+					document.getElementById("btn-yes10").style.display= 'none';
+					document.getElementById("btn-no10").style.display= 'none';
+					document.getElementById("backto9").style.display= 'none';
+					
+					
+					
+					
+					modifier_total(+1);
+					modifier_q10(+1);
+					}	
+
+				<!--Réponse YES -->
+				
+					document.getElementById("btn-yes10").onclick = function(){
+					document.getElementById("question").innerHTML = "Which inflammatory joint disease do you have?";
+			
+					
+					document.getElementById("backto10bis").style.display= 'block';
+					document.getElementById("qcm10b").style.display= 'block';
+					document.getElementById("ok10").style.display= 'block';
+					
+					document.getElementById("btn-yes10").style.display= 'none';
+					document.getElementById("btn-no10").style.display= 'none';
+					document.getElementById("backto9").style.display= 'none';
+					
+					
+					
+					}
+				
+				<!-- Retour question 9-->
+					
+					document.getElementById("backto9").onclick = function(){
+					document.getElementById("question").innerHTML = "9. I have important osteoporosis of my bones?";
+			
+					document.getElementById("btn-yes9").style.display= 'block';
+					document.getElementById("btn-no9").style.display= 'block';
+					document.getElementById("backto8").style.display= 'block';
+					
+					document.getElementById("btn-yes10").style.display= 'none';
+					document.getElementById("btn-no10").style.display= 'none';
+					document.getElementById("backto9").style.display= 'none';
+					
+					if(var_q9 == 1){
+					modifier_total(-1); modifier_q9(-1)
+					}
+					
+					if(var_q9 == -1){
+					modifier_total(+1); modifier_q9(+1)
+					}
+					}
+			<!-- Question 10Bis -->
+					document.getElementById("ok10").onclick = function() {
+				if (document.getElementById("10d").checked  || document.getElementById("10f").checked )  {
+				modifier_q10b(+1)}
+				
+				if (document.getElementById("10a").checked  || document.getElementById("10b").checked || document.getElementById("10c").checked || document.getElementById("10e").checked)  {
+				modifier_q10b(+2)}
+				
+				if (var_q10b > 1){
+				
+				document.getElementById("question").innerHTML = "You are a potential candidate for Total Knee Arthroplasty";
+			
+				
+				
+				
+				document.getElementById("ok10").style.display= 'none';
+				document.getElementById("qcm10b").style.display= 'none';
+				document.getElementById("backto10bis").style.display= 'block';
+				
+				}
+				
+				if (var_q10b == 1){
+				
+				document.getElementById("question").innerHTML = "11. Range of movement?";
+			
+						
+				document.getElementById("ok10").style.display= 'none';
+				document.getElementById("qcm10b").style.display= 'none';
+				
+				
+				
+				document.getElementById("qcm11").style.display= 'block';
+				document.getElementById("ok11").style.display= 'block';
+				document.getElementById("backto10").style.display= 'block';
+					
+				modifier_total(+1);
+				modifier_q10b(+1);
+				
+				
+				
+				}
+				}
+				
+			<!-- Retour Question 10 avec Backto10bis-->
+				
+				document.getElementById("backto10bis").onclick = function(){
+				document.getElementById("question").innerHTML = "10. I have an inflammatory diseases to the best of my knowledge?";
+			
+				document.getElementById("ok10").style.display= 'none';
+				document.getElementById("qcm10b").style.display= 'none';
+				document.getElementById("backto10bis").style.display= 'none';
+					
+				document.getElementById("btn-yes10").style.display= 'block';
+				document.getElementById("btn-no10").style.display= 'block';
+				document.getElementById("backto9").style.display= 'block';
+					
+					
+				}
+			
+			<!-- Question 11 -->
+					document.getElementById("ok11").onclick = function() {
+				if (document.getElementById("11a").checked  || document.getElementById("11b").checked) {
+				modifier_q11(+1)}
+				
+				
+				if (document.getElementById("11c").checked  || document.getElementById("11d").checked) {
+				modifier_q11(+2)}
+				
+				
+				if (var_q11 > 1){
+				
+				document.getElementById("question").innerHTML = "You are a potential candidate for  Total Knee Arthroplasty";
+			
+				document.getElementById("backto10").style.display= 'none';
+				document.getElementById("backto11").style.display= 'block';
+				
+				
+				document.getElementById("qcm11").style.display= 'none';
+			    document.getElementById("ok11").style.display= 'none';
+				}
+				
+				if (var_q11 == 1){
+				
+				document.getElementById("question").innerHTML = "12. I have important functional demands for my knee after surgery?";
+			
+				document.getElementById("btn-yes12").style.display= 'block';
+				document.getElementById("btn-no12").style.display= 'block';
+				document.getElementById("backto11").style.display= 'block';
+				
+				document.getElementById("qcm11").style.display= 'none';
+			    document.getElementById("ok11").style.display= 'none';
+				
+				modifier_total(+1);
+				
+				}
+				}
+				
+				<!-- Retour Question 10 ou 10b -->
+				document.getElementById("backto10").onclick = function(){
+				
+				if (var_q10 == 1){
+				modifier_total(-1);
+				modifier_q10(-1);
+				
+				document.getElementById("question").innerHTML = "10. I have an inflammatory diseases to the best of my knowledge?";
+			
+				document.getElementById("btn-yes10").style.display= 'block';
+				document.getElementById("btn-no10").style.display= 'block';
+				document.getElementById("backto9").style.display= 'block';
+					
+				document.getElementById("qcm11").style.display= 'none';
+				document.getElementById("ok11").style.display= 'none';
+				document.getElementById("backto10").style.display= 'none';
+				}
+				
+				else {
+				
+				document.getElementById("question").innerHTML = "Which inflammatory joint disease do you have?";
+				
+				document.getElementById("qcm10b").style.display= 'block';
+				document.getElementById("ok10").style.display= 'block';
+				document.getElementById("backto10bis").style.display= 'block';
+				
+				document.getElementById("backto10").style.display= 'none';
+				document.getElementById("qcm11").style.display= 'none';
+				document.getElementById("ok11").style.display= 'none';
+				
+				modifier_total(-1);
+				}
+				}
+			
+			<!--Question 12-->
+				<!--Réponse YES -->
+				
+					document.getElementById("btn-yes12").onclick = function(){
+					document.getElementById("question").innerHTML = "13. I want to continue sports (walking, hiking, cycling, golf, tennis, ski) after surgery?";
+			
+					document.getElementById("btn-yes12").style.display= 'none';
+					document.getElementById("btn-no12").style.display= 'none';
+					document.getElementById("backto11").style.display= 'none';
+					
+					document.getElementById("btn-yes13").style.display= 'block';
+					document.getElementById("btn-no13").style.display= 'block';
+					document.getElementById("backto12").style.display= 'block';
+					
+					modifier_total(+1);
+					modifier_q12(+1);
+					}
+					
+				<!--Réponse NO -->
+					
+					document.getElementById("btn-no12").onclick = function(){
+					document.getElementById("question").innerHTML = "13. I want to continue sports (walking, hiking, cycling, golf, tennis, ski) after surgery?";
+			
+					document.getElementById("btn-yes12").style.display= 'none';
+					document.getElementById("btn-no12").style.display= 'none';
+					document.getElementById("backto11").style.display= 'none';
+					
+					document.getElementById("btn-yes13").style.display= 'block';
+					document.getElementById("btn-no13").style.display= 'block';
+					document.getElementById("backto12").style.display= 'block';
+					}
+				
+				<!-- Retour question 11-->
+					
+					document.getElementById("backto11").onclick = function(){
+					document.getElementById("question").innerHTML = "11. Range of movement?";
+			
+					document.getElementById("qcm11").style.display= 'block';
+					document.getElementById("ok11").style.display= 'block';
+					document.getElementById("backto10").style.display= 'block';
+					
+					document.getElementById("btn-yes12").style.display= 'none';
+					document.getElementById("btn-no12").style.display= 'none';
+					document.getElementById("backto11").style.display= 'none';
+					
+					
+					
+					if(var_q11 == 1){
+					modifier_total(-1); modifier_q11(-1)
+					}
+					
+					if(var_q11 == 2){
+					modifier_q11(-2)
+					}
+					
+					if(var_q11 == 3){
+					modifier_q11(-3)
+					}
+					}
+			
+			<!--Question 13-->
+				<!--Réponse YES -->
+				
+					document.getElementById("btn-yes13").onclick = function(){
+					
+			
+					document.getElementById("btn-yes13").style.display= 'none';
+					document.getElementById("btn-no13").style.display= 'none';
+					document.getElementById("backto12").style.display= 'none';
+					
+					document.getElementById("backto13").style.display= 'block';
+					
+					modifier_total(+1);
+					modifier_q13(+1);
+					
+					if(var_total >= 4){
+					document.getElementById("question").innerHTML = "You are a potential candidate for Unicompartimental Knee Arthroplasty";
+					}
+					
+					if(var_total < 4){
+					document.getElementById("question").innerHTML = "You are a potential candidate for Total Knee Arthroplasty";
+					}
+					}
+					
+				<!--Réponse NO -->
+					
+					document.getElementById("btn-no13").onclick = function(){
+					
+			
+					document.getElementById("btn-yes13").style.display= 'none';
+					document.getElementById("btn-no13").style.display= 'none';
+					document.getElementById("backto12").style.display= 'none';
+					
+					
+					document.getElementById("backto13").style.display= 'block';
+					
+					if(var_total >= 4){
+					document.getElementById("question").innerHTML = "You are a potential candidate for Unicompartimental Knee Arthroplasty";
+					}
+					
+					if(var_total < 4){
+					document.getElementById("question").innerHTML = "You are a potential candidate for Total Knee Arthroplasty";
+					}
+					}
+				
+				<!-- Retour question 12-->
+					
+					document.getElementById("backto12").onclick = function(){
+					document.getElementById("question").innerHTML = "12. I have important functional demands for my knee after surgery?";
+			
+					document.getElementById("btn-yes12").style.display= 'block';
+					document.getElementById("btn-no12").style.display= 'block';
+					document.getElementById("backto11").style.display= 'block';
+					
+					document.getElementById("btn-yes13").style.display= 'none';
+					document.getElementById("btn-no13").style.display= 'none';
+					document.getElementById("backto12").style.display= 'none';
+					
+					
+					
+					if(var_q12 == 1){
+					modifier_total(-1); modifier_q12(-1)
+					}
+					}
+			
+			
+					
+				<!-- Retour question 13-->
+					
+					document.getElementById("backto13").onclick = function(){
+					document.getElementById("question").innerHTML = "13. I want to continue sports (walking, hiking, cycling, golf, tennis, ski) after surgery?";
+			
+					document.getElementById("btn-yes13").style.display= 'block';
+					document.getElementById("btn-no13").style.display= 'block';
+					document.getElementById("backto12").style.display= 'block';
+					
+					document.getElementById("btn-yes14").style.display= 'none';
+					document.getElementById("btn-no14").style.display= 'none';
+					document.getElementById("backto13").style.display= 'none';
+					
+					
+					
+					if(var_q13 == 1){
+					modifier_total(-1); modifier_q13(-1)
+					}
+					}
+					
+			
+		</script>
+	</body>
+</html>
